@@ -1,3 +1,11 @@
+/* 
+ 
+derived from 
+https://github.com/kriswiner/APDS9500/blob/master/APDS9500_gestures.ino
+by Kris Winer, Tlera Corporation,May 29, 2017
+ * 
+ * 
+ */
 APDS9500_R_RegBankSet = 0xEF
 
 # Bank 0*/
