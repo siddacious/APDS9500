@@ -1,11 +1,4 @@
-/* 
- 
-derived from 
-https://github.com/kriswiner/APDS9500/blob/master/APDS9500_gestures.ino
-by Kris Winer, Tlera Corporation,May 29, 2017
- * 
- * 
- */
+
 APDS9500_R_RegBankSet = 0xEF
 
 # Bank 0*/
@@ -147,7 +140,7 @@ APDS9500_Cmd_VSize = 0x01
 APDS9500_Cmd_HStart = 0x02
 APDS9500_Cmd_VStart = 0x03
 APDS9500_Cmd_HV = 0x04
-# Lens Shading */ = 
+# Lens Shading */ =
 APDS9500_R_LensShadingComp_EnH = 0x25
 APDS9500_R_Offest_X = 0x26
 APDS9500_R_Offest_Y = 0x27
@@ -155,7 +148,7 @@ APDS9500_R_LSC = 0x28
 APDS9500_R_LSFT = 0x29
 APDS9500_R_global = 0x42
 APDS9500_R_ggh = 0x44
-# Sleep Mode Parameters */ = 
+# Sleep Mode Parameters */ =
 APDS9500_R_IDLE_TIME_L = 0x65
 APDS9500_R_IDLE_TIME_H = 0x66
 APDS9500_R_IDLE_TIME_SLEEP_1_L = 0x67
@@ -230,7 +223,7 @@ class APDS9500:
   auto_sleep_mode = UnaryStruct(APDS9500_R_Auto_SLEEP_Mode, ">B")
   wake_up_sig_sel = UnaryStruct(APDS9500_R_Wake_Up_Sig_Sel, ">B")
   sram_read_en_h = UnaryStruct(APDS9500_R_SRAM_Read_EnH, ">B")
-  
+
   # readers
   gestures_enabled = UnaryStruct(APDS9500_R_GestureDetEn, ">B")
   gesture_result = UnaryStruct(APDS9500_GestureResult, ">B")
